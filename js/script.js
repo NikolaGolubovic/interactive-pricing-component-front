@@ -21,8 +21,6 @@ function toNormalPrice(value) {
 
 let discountActive = false;
 
-// range left and right width
-// https://stackoverflow.com/posts/57153340/revisions
 range.addEventListener("input", function () {
   var value = ((this.value - this.min) / (this.max - this.min)) * 100;
   const priceValue = Number(Object.values(prices[this.value]));
